@@ -1,0 +1,130 @@
+
+
+:fightchoice
+title FIGHT
+cls
+echo.
+echo {1} Rat
+echo {2} Lion
+echo {3} Bear
+echo {4} Squirrel
+echo {5} Rabbit
+echo {6} Assassin
+echo {7} Wizard
+echo {8} Dark Warrior
+echo {9} CANCEL
+echo.
+set /p udefine="> "
+if %udefine%==1 GOTO ratsets
+if %udefine%==2 GOTO lionsets
+if %udefine%==3 GOTO bearsets
+if %udefine%==4 GOTO squirrelsets
+if %udefine%==5 GOTO rabbitsets
+if %udefine%==6 GOTO assassinsets
+if %udefine%==7 GOTO wizardsets
+if %udefine%==8 GOTO darkwarriorsets
+if %udefine%==9 GOTO setzone
+GOTO fightchoice
+:lionsets
+set enemyname=Lion
+set enemynamedisp=Lion               
+set /a enemyattack=14
+set /a enemydefense=8
+set /a enemyagility=4
+set /a enemylvl=2
+set /a enemyhp=55
+set /a enemymaxhp=55
+set /a golddrop=23
+set /a expgain=30
+GOTO fightsets
+
+:assassinsets
+set enemyname=Assassin
+set enemynamedisp=Assassin           
+set /a enemyattack=20
+set /a enemydefense=7
+set /a enemyagility=7
+set /a enemylvl=3
+set /a enemyhp=50
+set /a enemymaxhp=50
+set /a golddrop=50
+set /a expgain=50
+GOTO fightsets
+
+:wizardsets
+set enemyname=Wizard
+set enemynamedisp=Wizard             
+set /a enemyattack=25
+set /a enemydefense=5
+set /a enemyagility=4
+set /a enemylvl=3
+set /a enemyhp=50
+set /a enemymaxhp=50
+set /a golddrop=50
+set /a expgain=50
+GOTO fightsets
+
+:squirrelsets
+set enemyname=Squirrel
+set enemynamedisp=Squirrel           
+set /a enemyattack=5
+set /a enemydefense=1
+set /a enemyagility=10
+set /a enemylvl=1
+set /a enemyhp=10
+set /a enemymaxhp=10
+set /a golddrop=5
+set /a expgain=5
+GOTO fightsets
+
+:rabbitsets
+set enemyname=Rabbit
+set enemynamedisp=Rabbit             
+set /a enemyattack=5
+set /a enemydefense=2
+set /a enemyagility=7
+set /a enemylvl=1
+set /a enemyhp=10
+set /a enemymaxhp=10
+set /a golddrop=5
+set /a expgain=10
+GOTO fightsets
+
+:bearsets
+set enemyname=Bear
+set enemynamedisp=Bear               
+set /a enemyattack=15
+set /a enemydefense=10
+set /a enemyagility=2
+set /a enemylvl=2
+set /a enemyhp=65
+set /a enemymaxhp=65
+set /a golddrop=35
+set /a expgain=45
+GOTO fightsets
+
+:darkwarriorsets
+set enemyname=Dark_Warrior
+set enemynamedisp=Dark_Warrior       
+set /a enemyattack=15
+set /a enemydefense=15
+set /a enemyagility=2
+set /a enemylvl=4
+set /a enemyhp=75
+set /a enemymaxhp=75
+set /a golddrop=70
+set /a expgain=75
+GOTO fightsets
+
+:ratsets
+set enemyname=Rat
+set enemynamedisp=Rat                
+set /a enemyattack=13
+set /a enemydefense=7
+set /a enemyagility=3
+set /a enemylvl=1
+set /a enemyhp=50
+set /a enemymaxhp=50
+set /a golddrop=15
+set /a expgain=20
+GOTO fightsets
